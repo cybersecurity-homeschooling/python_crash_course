@@ -10,3 +10,7 @@ class TestHelloWorld(unittest.TestCase):
     def test_hello_world(self):
         r = hello_world()
         self.assertEqual(r, "Hello world")
+
+    def test_hello_world_fail(self):
+        r = hello_world()
+        self.assertEqual(r, "h")
